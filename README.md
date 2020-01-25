@@ -2,15 +2,18 @@
 
 python wrapper for VT100 escape sequences, which are supported by most modern terminals (on linux at least).
 
-# Installation
+## Installation
 
 `git clone https://github.com/pboardman/py100`
+
 `cd py100`
+
 `python3 setup.py install --user`
 
-# Usage
+## Usage
 
 `from py100 import py100`
+
 `py100.some_function_from_the_table_below()`
 
 ## Progress
