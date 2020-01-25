@@ -77,9 +77,9 @@ This is the list of what is currently supported and what should be supported in 
 |Esc[Line;Columnf |Move cursor to screen location v,h |CUP|:heavy_check_mark:|:heavy_check_mark:|move_cursor_to_location()|
 |EscD |Move/scroll window up one line |IND||||
 |EscM |Move/scroll window down one line |RI||||
-|EscE |Move to next line |NEL||:heavy_check_mark:||
-|Esc7 |Save cursor position and attributes |DECSC||:heavy_check_mark:||
-|Esc8 |Restore cursor position and attributes |DECSC||:heavy_check_mark:||
+|EscE |Move to next line |NEL|:heavy_check_mark:|:heavy_check_mark:|move_to_next_line()|
+|Esc7 |Save cursor position and attributes |DECSC|:heavy_check_mark:|:heavy_check_mark:|save_cursor_position()|
+|Esc8 |Restore cursor position and attributes |DECSC|:heavy_check_mark:|:heavy_check_mark:|restore_cursor_position()|
 |EscH |Set a tab at the current column |HTS||||
 |Esc[g |Clear a tab at the current column |TBC||||
 |Esc[0g |Clear a tab at the current column |TBC||||

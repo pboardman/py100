@@ -1,8 +1,6 @@
 ########
 # Screen clearing
 ########
-
-# Esc[2J
 def clear_screen():
     """Clear entire screen"""
     print(chr(27) + '[2J')
@@ -39,3 +37,18 @@ def move_cursor_upper_left():
 def move_cursor_to_location(vpos, hpos):
     """Move cursor to upper left corner"""
     print(chr(27) + f'[{vpos};{hpos}H', end='')
+
+
+def move_to_next_line():
+    """Move to next line"""
+    print(chr(27) + 'E', end='')
+
+
+def save_cursor_position():
+    """Save cursor position and attributes"""
+    print(chr(27) + '7', end='')
+
+
+def restore_cursor_position():
+    """Restore cursor position and attributes"""
+    print(chr(27) + '8', end='')
