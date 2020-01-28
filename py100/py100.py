@@ -9,13 +9,23 @@ from io import StringIO
 escape = chr(27)
 
 ########
-# Screen clearing
+# Screen
 ########
 
 
 def clear_screen():
     """Clear entire screen"""
     print(escape + '[2J', end='')
+
+
+def scroll_window_up():
+    """Move/scroll window up one line"""
+    print(escape + 'D', end='')
+
+
+def scroll_window_down():
+    """Move/scroll window down one line"""
+    print(escape + 'M', end='')
 
 
 ########

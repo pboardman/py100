@@ -75,8 +75,8 @@ This is the list of what is currently supported and what should be supported in 
 |Esc[f |Move cursor to upper left corner |hvhome|:heavy_check_mark:|:heavy_check_mark:|move_cursor_upper_left()|
 |Esc[;f |Move cursor to upper left corner |hvhome|:heavy_check_mark:|:heavy_check_mark:|move_cursor_upper_left()|
 |Esc[Line;Columnf |Move cursor to screen location v,h |CUP|:heavy_check_mark:|:heavy_check_mark:|move_cursor_to_location()|
-|EscD |Move/scroll window up one line |IND||||
-|EscM |Move/scroll window down one line |RI||||
+|EscD |Move/scroll window up one line |IND|:heavy_check_mark:|:heavy_check_mark:|scroll_window_up()|
+|EscM |Move/scroll window down one line |RI|:heavy_check_mark:|:heavy_check_mark:|scroll_window_down()|
 |EscE |Move to next line |NEL|:heavy_check_mark:|:heavy_check_mark:|move_to_next_line()|
 |Esc7 |Save cursor position and attributes |DECSC|:heavy_check_mark:|:heavy_check_mark:|save_cursor_position()|
 |Esc8 |Restore cursor position and attributes |DECSC|:heavy_check_mark:|:heavy_check_mark:|restore_cursor_position()|
