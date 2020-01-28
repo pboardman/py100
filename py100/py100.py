@@ -137,3 +137,43 @@ def set_auto_wrap_mode():
 def reset_auto_wrap_mode():
     """Reset auto-wrap mode"""
     print(escape + '[?7l', end='')
+
+
+########
+# Characters settings
+########
+
+
+def turn_off_characters_attributes():
+    """Turn off character attributes"""
+    print(escape + '[m', end='')
+
+
+def turn_bold_mode_on():
+    """Turn bold mode on"""
+    print(escape + '[1m', end='')
+
+
+def turn_low_intensity_mode_on():
+    """Turn low intensity mode on"""
+    print(escape + '[2m', end='')
+
+
+def turn_underline_mode_on():
+    """Turn underline mode on"""
+    print(escape + '[4m', end='')
+
+
+def turn_blinking_mode_on():
+    """Turn blinking mode on"""
+    print(escape + '[5m', end='')
+
+
+def turn_reverse_video_mode_on():
+    """Turn reverse video on"""
+    print(escape + '[7m', end='')
+
+
+def turn_invisible_text_mode_on():
+    """Turn invisible text mode on"""
+    print(escape + '[8m', end='')

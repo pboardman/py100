@@ -29,7 +29,7 @@ This is the list of what is currently supported and what should be supported in 
 |Esc[?4h |Set smooth scrolling |DECSCLM|:heavy_check_mark:|:heavy_check_mark:|set_smooth_scrolling()|
 |Esc[?5h |Set reverse video on screen |DECSCNM|:heavy_check_mark:|:heavy_check_mark:|set_reverse_video_on_screen()|
 |Esc[?6h |Set origin to relative |DECOM|:heavy_check_mark:|:heavy_check_mark:|set_origin_relative()|
-|Esc[?7h |Set auto-wrap mode |DECAWM|||set_auto_wrap_mode()|
+|Esc[?7h |Set auto-wrap mode |DECAWM|:heavy_check_mark:|:heavy_check_mark:|set_auto_wrap_mode()|
 |Esc[?8h |Set auto-repeat mode |DECARM||||
 |Esc[?9h |Set interlacing mode |DECINLM||||
 |Esc[20l |Set line feed mode |LMN||||
@@ -57,13 +57,13 @@ This is the list of what is currently supported and what should be supported in 
 |EscN |Set single shift 2 |SS2||||
 |EscO |Set single shift 3 |SS3||||
 |Esc[m |Turn off character attributes |SGR0||||
-|Esc[0m |Turn off character attributes |SGR0||||
-|Esc[1m |Turn bold mode on |SGR1||||
-|Esc[2m |Turn low intensity mode on |SGR2||||
-|Esc[4m |Turn underline mode on |SGR4||||
-|Esc[5m |Turn blinking mode on |SGR5||||
-|Esc[7m |Turn reverse video on |SGR7||||
-|Esc[8m |Turn invisible text mode on |SGR8||||
+|Esc[0m |Turn off character attributes |SGR0|:heavy_check_mark:|:heavy_check_mark:|turn_off_characters_attributes()|
+|Esc[1m |Turn bold mode on |SGR1|:heavy_check_mark:|:heavy_check_mark:|turn_bold_mode_on()|
+|Esc[2m |Turn low intensity mode on |SGR2|:heavy_check_mark:|:heavy_check_mark:|turn_low_intensity_mode_on()|
+|Esc[4m |Turn underline mode on |SGR4|:heavy_check_mark:|:heavy_check_mark:|turn_underline_mode_on()|
+|Esc[5m |Turn blinking mode on |SGR5|:heavy_check_mark:|:heavy_check_mark:|turn_blinking_mode_on()|
+|Esc[7m |Turn reverse video on |SGR7|:heavy_check_mark:|:heavy_check_mark:|turn_reverse_video_mode_on()|
+|Esc[8m |Turn invisible text mode on |SGR8|:heavy_check_mark:|:heavy_check_mark:|turn_invisible_text_mode_on()|
 |Esc[Line;Liner |Set top and bottom lines of a window |DECSTBM||||
 |Esc[ValueA |Move cursor up n lines |CUU|:heavy_check_mark:|:heavy_check_mark:|move_cursor_up()|
 |Esc[ValueB |Move cursor down n lines |CUD|:heavy_check_mark:|:heavy_check_mark:|move_cursor_down()|
