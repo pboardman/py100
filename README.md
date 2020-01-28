@@ -25,11 +25,11 @@ This is the list of what is currently supported and what should be supported in 
 |Esc[20h |Set new line mode |LMN||||
 |Esc[?1h |Set cursor key to application |DECCKM||||
 |none |Set ANSI (versus VT52) |DECANM||||
-|Esc[?3h |Set number of columns to 132 |DECCOLM||:heavy_check_mark:||
-|Esc[?4h |Set smooth scrolling |DECSCLM||||
-|Esc[?5h |Set reverse video on screen |DECSCNM||||
-|Esc[?6h |Set origin to relative |DECOM||||
-|Esc[?7h |Set auto-wrap mode |DECAWM||||
+|Esc[?3h |Set number of columns to 132 |DECCOLM|:heavy_check_mark:|:heavy_check_mark:|set_columns_to_132()|
+|Esc[?4h |Set smooth scrolling |DECSCLM|:heavy_check_mark:|:heavy_check_mark:|set_smooth_scrolling()|
+|Esc[?5h |Set reverse video on screen |DECSCNM|:heavy_check_mark:|:heavy_check_mark:|set_reverse_video_on_screen()|
+|Esc[?6h |Set origin to relative |DECOM|:heavy_check_mark:|:heavy_check_mark:|set_origin_relative()|
+|Esc[?7h |Set auto-wrap mode |DECAWM|||set_auto_wrap_mode()|
 |Esc[?8h |Set auto-repeat mode |DECARM||||
 |Esc[?9h |Set interlacing mode |DECINLM||||
 |Esc[20l |Set line feed mode |LMN||||
@@ -37,9 +37,9 @@ This is the list of what is currently supported and what should be supported in 
 |Esc[?2l |Set VT52 (versus ANSI) |DECANM||||
 |Esc[?3l |Set number of columns to 80 |DECCOLM||:heavy_check_mark:||
 |Esc[?4l |Set jump scrolling |DECSCLM||||
-|Esc[?5l |Set normal video on screen |DECSCNM||||
-|Esc[?6l |Set origin to absolute |DECOM||||
-|Esc[?7l |Reset auto-wrap mode |DECAWM||||
+|Esc[?5l |Set normal video on screen |DECSCNM|:heavy_check_mark:|:heavy_check_mark:|set_normal_video_on_screen()|
+|Esc[?6l |Set origin to absolute |DECOM|:heavy_check_mark:|:heavy_check_mark:|set_origin_absolute()|
+|Esc[?7l |Reset auto-wrap mode |DECAWM|:heavy_check_mark:|:heavy_check_mark:|reset_auto_wrap_mode()|
 |Esc[?8l |Reset auto-repeat mode |DECARM||||
 |Esc[?9l |Reset interlacing mode |DECINLM||||
 |Esc= |Set alternate keypad mode |DECKPAM||||
@@ -99,7 +99,7 @@ This is the list of what is currently supported and what should be supported in 
 |Esc5n |Device status report |DSR||:heavy_check_mark:||
 |Esc0n |Response: terminal is OK |DSR||||
 |Esc3n |Response: terminal is not OK |DSR||||
-|Esc6n |Get cursor position |DSR||:heavy_check_mark:||
+|Esc6n |Get cursor position |DSR|:heavy_check_mark:|:heavy_check_mark:|get_cursor_position()|
 |EscLine;ColumnR |Response: cursor is at v,h |CPR||||
 |Esc[c |Identify what terminal type |DA||:heavy_check_mark:||
 |Esc[0c |Identify what terminal type (another) |DA||:heavy_check_mark:||
