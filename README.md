@@ -88,13 +88,13 @@ This is the list of what is currently supported and what should be supported in 
 |Esc#4 |Double-height letters, bottom half |DECDHL||||
 |Esc#5 |Single width, single height letters |DECSWL||||
 |Esc#6 |Double width, single height letters |DECDWL||||
-|Esc[K |Clear line from cursor right |EL0||:heavy_check_mark:||
-|Esc[0K |Clear line from cursor right |EL0||:heavy_check_mark:||
-|Esc[1K |Clear line from cursor left |EL1||:heavy_check_mark:||
-|Esc[2K |Clear entire line |EL2||:heavy_check_mark:||
-|Esc[J |Clear screen from cursor down |ED0||:heavy_check_mark:||
-|Esc[0J |Clear screen from cursor down |ED0||:heavy_check_mark:||
-|Esc[1J |Clear screen from cursor up |ED1||:heavy_check_mark:||
+|Esc[K |Clear line from cursor right |EL0|:heavy_check_mark:|:heavy_check_mark:|clear_line_from_cursor_right()|
+|Esc[0K |Clear line from cursor right |EL0|:heavy_check_mark:|:heavy_check_mark:|clear_line_from_cursor_right()|
+|Esc[1K |Clear line from cursor left |EL1|:heavy_check_mark:|:heavy_check_mark:|clear_line_from_cursor_left()|
+|Esc[2K |Clear entire line |EL2||:heavy_check_mark:|clear_entire_line()|
+|Esc[J |Clear screen from cursor down |ED0||:heavy_check_mark:|clear_line_from_cursor_down()|
+|Esc[0J |Clear screen from cursor down |ED0||:heavy_check_mark:|clear_line_from_cursor_down()|
+|Esc[1J |Clear screen from cursor up |ED1||:heavy_check_mark:|clear_line_from_cursor_up()|
 |Esc[2J |Clear entire screen |ED2|:heavy_check_mark:|:heavy_check_mark:|clear_screen()|
 |Esc5n |Device status report |DSR||:heavy_check_mark:||
 |Esc0n |Response: terminal is OK |DSR||||
