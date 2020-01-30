@@ -30,18 +30,18 @@ This is the list of what is currently supported and what should be supported in 
 |Esc[?5h |Set reverse video on screen |DECSCNM|:heavy_check_mark:|:heavy_check_mark:|set_reverse_video_on_screen()|
 |Esc[?6h |Set origin to relative |DECOM|:heavy_check_mark:|:heavy_check_mark:|set_origin_relative()|
 |Esc[?7h |Set auto-wrap mode |DECAWM|:heavy_check_mark:|:heavy_check_mark:|set_auto_wrap_mode()|
-|Esc[?8h |Set auto-repeat mode |DECARM||||
-|Esc[?9h |Set interlacing mode |DECINLM||||
-|Esc[20l |Set line feed mode |LMN||||
-|Esc[?1l |Set cursor key to cursor |DECCKM||||
+|Esc[?8h |Set auto-repeat mode |DECARM|:heavy_check_mark:|:heavy_check_mark:|set_auto_repeat_mode()|
+|Esc[?9h |Set interlacing mode |DECINLM|:heavy_check_mark:|:heavy_check_mark:|set_interlacing_mode()|
+|Esc[20l |Set line feed mode |LMN|:heavy_check_mark:|:heavy_check_mark:|set_line_feed_mode()|
+|Esc[?1l |Set cursor key to cursor |DECCKM|:heavy_check_mark:|:heavy_check_mark:|set_cursor_to_key_mode()|
 |Esc[?2l |Set VT52 (versus ANSI) |DECANM||||
-|Esc[?3l |Set number of columns to 80 |DECCOLM||:heavy_check_mark:||
+|Esc[?3l |Set number of columns to 80 |DECCOLM|:heavy_check_mark:|:heavy_check_mark:|set_columns_to_80()|
 |Esc[?4l |Set jump scrolling |DECSCLM||||
 |Esc[?5l |Set normal video on screen |DECSCNM|:heavy_check_mark:|:heavy_check_mark:|set_normal_video_on_screen()|
 |Esc[?6l |Set origin to absolute |DECOM|:heavy_check_mark:|:heavy_check_mark:|set_origin_absolute()|
 |Esc[?7l |Reset auto-wrap mode |DECAWM|:heavy_check_mark:|:heavy_check_mark:|reset_auto_wrap_mode()|
-|Esc[?8l |Reset auto-repeat mode |DECARM||||
-|Esc[?9l |Reset interlacing mode |DECINLM||||
+|Esc[?8l |Reset auto-repeat mode |DECARM|:heavy_check_mark:|:heavy_check_mark:|reset_auto_repeat_mode()|
+|Esc[?9l |Reset interlacing mode |DECINLM|:heavy_check_mark:|:heavy_check_mark:|reset_interlacing_mode()|
 |Esc= |Set alternate keypad mode |DECKPAM||||
 |Esc> |Set numeric keypad mode |DECKPNM||||
 |Esc(A |Set United Kingdom G0 character set |setukg0||||

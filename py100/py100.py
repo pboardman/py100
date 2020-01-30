@@ -114,6 +114,11 @@ def set_columns_to_132():
     print(escape + '[?3h', end='')
 
 
+def set_columns_to_80():
+    """Set number of columns to 80"""
+    print(escape + '[?3l', end='')
+
+
 def set_smooth_scrolling():
     """Set smooth scrolling"""
     print(escape + '[?4h', end='')
@@ -147,6 +152,36 @@ def set_auto_wrap_mode():
 def reset_auto_wrap_mode():
     """Reset auto-wrap mode"""
     print(escape + '[?7l', end='')
+
+
+def set_auto_repeat_mode():
+    """Set auto-repeat mode"""
+    print(escape + '[?8h', end='')
+
+
+def reset_auto_repeat_mode():
+    """Reset auto-repeat mode"""
+    print(escape + '[?8l', end='')
+
+
+def set_interlacing_mode():
+    """Set interlacing mode"""
+    print(escape + '[?9h', end='')
+
+
+def reset_interlacing_mode():
+    """Reset interlacing mode"""
+    print(escape + '[?9l', end='')
+
+
+def set_line_feed_mode():
+    """Set line feed mode"""
+    print(escape + '[?20l', end='')
+
+
+def set_cursor_to_key_mode():
+    """Set cursor key to cursor"""
+    print(escape + '[?1l', end='')
 
 
 ########
