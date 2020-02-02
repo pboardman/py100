@@ -18,6 +18,7 @@ setup(
     url='https://github.com/pboardman/py100',
     author='Pascal Boardman',
     author_email='pascalboardman@gmail.com',
+    long_description_content_type='text/markdown',
     license='MIT',
     classifiers=[
         'Intended Audience :: End Users/Desktop',
