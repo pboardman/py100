@@ -83,7 +83,7 @@ This is the list of what is currently supported and what should be supported in 
 |Esc[g |Clear a tab at the current column |TBC|:heavy_check_mark:|:heavy_check_mark:|clear_a_tab_at_the_current_column()|
 |Esc[0g |Clear a tab at the current column |TBC|:heavy_check_mark:|:heavy_check_mark:|clear_a_tab_at_the_current_column()|
 |Esc[3g |Clear all tabs |TBC|:heavy_check_mark:|:heavy_check_mark:|clear_all_tabs()|
-|Esc#3 |Double-height letters, top half |DECDHL|heavy_check_mark:|heavy_check_mark:|double_height_letters_top_half()|
+|Esc#3 |Double-height letters, top half |DECDHL|:heavy_check_mark:|:heavy_check_mark:|double_height_letters_top_half()|
 |Esc#4 |Double-height letters, bottom half |DECDHL|:heavy_check_mark:|:heavy_check_mark:|double_height_letters_bottom_half()|
 |Esc#5 |Single width, single height letters |DECSWL|:heavy_check_mark:|:heavy_check_mark:|single_width_single_height_letters()|
 |Esc#6 |Double width, single height letters |DECDWL|:heavy_check_mark:|:heavy_check_mark:|double_width_single_height_letters()|
@@ -102,7 +102,7 @@ This is the list of what is currently supported and what should be supported in 
 |EscLine;ColumnR |Response: cursor is at v,h |CPR|:heavy_check_mark:|:heavy_check_mark:|get_cursor_position()|
 |Esc[c |Identify what terminal type |DA||:heavy_check_mark:||
 |Esc[0c |Identify what terminal type (another) |DA||:heavy_check_mark:||
-|Esc[?1;Value0c |Response: terminal type code n |DA||heavy_check_mark:||
+|Esc[?1;Value0c |Response: terminal type code n |DA||:heavy_check_mark:||
 |Escc |Reset terminal to initial state |RIS|:heavy_check_mark:|:heavy_check_mark:|reset_terminal_to_initial_state()|
 |Esc#8 |Screen alignment display |DECALN|:heavy_check_mark:|:heavy_check_mark:|screen_alignment_display()|
 |Esc[2;1y |Confidence power up test |DECTST||||
