@@ -12,7 +12,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='py100',
-    version='0.1',
+    version='1.0',
     description='VT100 escape sequences wrapper',
     long_description=long_description,
     url='https://github.com/pboardman/py100',

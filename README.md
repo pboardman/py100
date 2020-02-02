@@ -4,11 +4,7 @@ python wrapper for VT100 escape sequences, which are supported by most modern te
 
 ## Installation
 
-`git clone https://github.com/pboardman/py100`
-
-`cd py100`
-
-`python3 setup.py install --user`
+`pip3 install py100`
 
 ## Usage
 
