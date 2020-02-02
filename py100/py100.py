@@ -129,6 +129,11 @@ def get_cursor_position():
     return (int(groups[1]), int(groups[0]))
 
 
+def set_cursor_key_to_application():
+    """Set cursor key to application"""
+    print(escape + '[?1h', end='')
+
+
 ########
 # Terminal settings
 ########
@@ -209,9 +214,94 @@ def set_cursor_to_key_mode():
     print(escape + '[?1l', end='')
 
 
+def set_new_line_mode():
+    """Set new line mode"""
+    print(escape + '[20h', end='')
+
+
+def set_vt52():
+    """Set VT52 (versus ANSI)"""
+    print(escape + '[?2l', end='')
+
+
+def set_jump_scrolling():
+    """Set jump scrolling"""
+    print(escape + '[?4l', end='')
+
+
+def set_top_and_bottom_lines_of_a_window(top_line, bottom_line):
+    """Set top and bottom lines of a window"""
+    print(escape + f'[{top_line};{bottom_line}r', end='')
+
+
+def reset_terminal_to_initial_state():
+    """Reset terminal to initial state"""
+    print(escape + 'c', end='')
+
+
 ########
 # Characters settings
 ########
+
+
+def set_united_kingdom_g0_character_set():
+    """Set United Kingdom G0 character set"""
+    print(escape + '(A', end='')
+
+
+def set_united_kingdom_g1_character_set():
+    """Set United Kingdom G1 character set"""
+    print(escape + ')A', end='')
+
+
+def set_united_states_g0_character_set():
+    """Set United States G0 character set"""
+    print(escape + '(B', end='')
+
+
+def set_united_states_g1_character_set():
+    """Set United States G1 character set"""
+    print(escape + ')B', end='')
+
+
+def set_g0_special_chars_and_line_set():
+    """Set G0 special chars. & line set"""
+    print(escape + '(0', end='')
+
+
+def set_g1_special_chars_and_line_set():
+    """Set G1 special chars. & line set"""
+    print(escape + ')0', end='')
+
+
+def set_g0_alternate_character_rom():
+    """Set G0 alternate character ROM"""
+    print(escape + '(1', end='')
+
+
+def set_g1_alternate_character_rom():
+    """Set G1 alternate character ROM"""
+    print(escape + ')1', end='')
+
+
+def set_g0_alt_char_rom_and_spec_graphics():
+    """Set G0 alt char ROM and spec. graphics"""
+    print(escape + '(2', end='')
+
+
+def set_g1_alt_char_rom_and_spec_graphics():
+    """Set G1 alt char ROM and spec. graphics"""
+    print(escape + ')2', end='')
+
+
+def set_single_shift_2():
+    """Set single shift 2"""
+    print(escape + 'N', end='')
+
+
+def set_single_shift_3():
+    """Set single shift 3"""
+    print(escape + 'O', end='')
 
 
 def turn_off_characters_attributes():
@@ -247,3 +337,98 @@ def turn_reverse_video_mode_on():
 def turn_invisible_text_mode_on():
     """Turn invisible text mode on"""
     print(escape + '[8m', end='')
+
+
+def double_height_letters_top_half():
+    """Double-height letters, top half"""
+    print(escape + '#3', end='')
+
+
+def double_height_letters_bottom_half():
+    """Double-height letters, bottom half"""
+    print(escape + '#4', end='')
+
+
+def single_width_single_height_letters():
+    """Single width, single height letters"""
+    print(escape + '#5', end='')
+
+
+def double_width_single_height_letters():
+    """Double width, single height letters"""
+    print(escape + '#6', end='')
+
+
+########
+# Keypad settings
+########
+
+
+def set_alternate_keypad_mode():
+    """Set alternate keypad mode"""
+    print(escape + '=', end='')
+
+
+def set_numeric_keypad_mode():
+    """Set numeric keypad mode"""
+    print(escape + '>', end='')
+
+
+########
+# Tabs
+########
+
+
+def set_a_tab_at_the_current_column():
+    """Set a tab at the current column"""
+    print(escape + 'H', end='')
+
+
+def clear_a_tab_at_the_current_column():
+    """Clear a tab at the current column"""
+    print(escape + '[g', end='')
+
+
+def clear_all_tabs():
+    """Clear all tabs"""
+    print(escape + '[3g', end='')
+
+
+########
+# Display settings
+########
+
+
+def screen_alignment_display():
+    """Screen alignment display"""
+    print(escape + '#8', end='')
+
+
+########
+# LEDS
+########
+
+
+def turn_off_all_four_leds():
+    """Turn off all four leds"""
+    print(escape + '[0q', end='')
+
+
+def turn_on_led_1():
+    """Turn on LED #1"""
+    print(escape + '[1q', end='')
+
+
+def turn_on_led_2():
+    """Turn on LED #2"""
+    print(escape + '[2q', end='')
+
+
+def turn_on_led_3():
+    """Turn on LED #3"""
+    print(escape + '[3q', end='')
+
+
+def turn_on_led_4():
+    """Turn on LED #4"""
+    print(escape + '[4q', end='')
