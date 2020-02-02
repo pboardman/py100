@@ -64,16 +64,16 @@ This is the list of what is currently supported and what should be supported in 
 |Esc[7m |Turn reverse video on |SGR7|:heavy_check_mark:|:heavy_check_mark:|turn_reverse_video_mode_on()|
 |Esc[8m |Turn invisible text mode on |SGR8|:heavy_check_mark:|:heavy_check_mark:|turn_invisible_text_mode_on()|
 |Esc[Line;Liner |Set top and bottom lines of a window |DECSTBM|:heavy_check_mark:|:heavy_check_mark:|set_top_and_bottom_lines_of_a_window(top_line, bottom_line)|
-|Esc[ValueA |Move cursor up n lines |CUU|:heavy_check_mark:|:heavy_check_mark:|move_cursor_up()|
-|Esc[ValueB |Move cursor down n lines |CUD|:heavy_check_mark:|:heavy_check_mark:|move_cursor_down()|
-|Esc[ValueC |Move cursor right n lines |CUF|:heavy_check_mark:|:heavy_check_mark:|move_cursor_right()|
-|Esc[ValueD |Move cursor left n lines |CUB|:heavy_check_mark:|:heavy_check_mark:|move_cursor_left()|
+|Esc[ValueA |Move cursor up n lines |CUU|:heavy_check_mark:|:heavy_check_mark:|move_cursor_up(nb_line)|
+|Esc[ValueB |Move cursor down n lines |CUD|:heavy_check_mark:|:heavy_check_mark:|move_cursor_down(nb_line)|
+|Esc[ValueC |Move cursor right n lines |CUF|:heavy_check_mark:|:heavy_check_mark:|move_cursor_right(nb_line)|
+|Esc[ValueD |Move cursor left n lines |CUB|:heavy_check_mark:|:heavy_check_mark:|move_cursor_left(nb_line)|
 |Esc[H |Move cursor to upper left corner |cursorhome|:heavy_check_mark:|:heavy_check_mark:|move_cursor_upper_left()|
 |Esc[;H |Move cursor to upper left corner |cursorhome|:heavy_check_mark:|:heavy_check_mark:|move_cursor_upper_left()|
 |Esc[Line;ColumnH |Move cursor to screen location v,h |CUP|:heavy_check_mark:|:heavy_check_mark:|move_cursor_to_location()|
 |Esc[f |Move cursor to upper left corner |hvhome|:heavy_check_mark:|:heavy_check_mark:|move_cursor_upper_left()|
 |Esc[;f |Move cursor to upper left corner |hvhome|:heavy_check_mark:|:heavy_check_mark:|move_cursor_upper_left()|
-|Esc[Line;Columnf |Move cursor to screen location v,h |CUP|:heavy_check_mark:|:heavy_check_mark:|move_cursor_to_location()|
+|Esc[Line;Columnf |Move cursor to screen location v,h |CUP|:heavy_check_mark:|:heavy_check_mark:|move_cursor_to_location(hpos, vpos)|
 |EscD |Move/scroll window up one line |IND|:heavy_check_mark:|:heavy_check_mark:|scroll_window_up()|
 |EscM |Move/scroll window down one line |RI|:heavy_check_mark:|:heavy_check_mark:|scroll_window_down()|
 |EscE |Move to next line |NEL|:heavy_check_mark:|:heavy_check_mark:|move_to_next_line()|
